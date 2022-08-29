@@ -1,0 +1,259 @@
+
+.swiper-slide span {
+    text-align: center;
+    display: block;
+    margin: 20px;
+    font-size: 21px;
+}
+
+.swiper-slide {
+    background: #fff;
+}
+
+.swiper-container {
+    height: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.block-site p {
+    margin: 0px 0 6px 0;
+    color: black;
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis; /* Многоточие */
+}
+
+.block-site {
+    text-align: center;
+}
+
+.progressbar, .progressbar-infinite {
+    height: 6px;
+}
+
+.row.link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.row.link a {
+    float: left;
+    margin: 5px;
+}
+
+.swiper-slide.swiper-slide-active {
+    overflow: auto !important;
+}
+.navbar-fixed .page-content{
+    padding-top: 0px;
+}
+.list-block ul{
+    list-style: inherit;
+}
+.number {
+    float: left;
+    font-size: 3em;
+}
+
+.number div {
+    display: none;
+}
+
+.number .active-number {
+    display: block !important;
+}
+
+.select-f-c {
+    float: right;
+    padding-right: 18px;
+}
+
+.select-f-c div {
+    cursor: pointer;
+    color: #B5B2B2;
+    font-size: 1.8em;
+}
+
+.active-select-f-c {
+    color: #000!important;
+    cursor: default !important;
+}
+
+#dollar .d-1 {
+    margin: 0;
+    font-size: 1em;
+}
+
+#dollar .d-2 {
+    margin: 0;
+    font-size: 1em;
+}
+#dollar {
+    max-width: 180px;
+    margin: 0 auto;
+}
+#euro {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+#euro .e-1 {
+    margin: 0;
+    font-size: 1em;
+}
+
+#euro .e-2 {
+    margin: 0;
+    font-size: 1em;
+}
+#euro {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.main_d {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.main_e {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.title-news {
+    color: #999999;
+    font-size: 14px;
+    margin: -3px 0 5px 0;
+}
+.img-news img {
+    max-width: 100%;
+}
+.img-news {
+    text-align: center;
+}
+.list-block li {
+    list-style: none;
+}
+.list-block {
+    margin: 0;
+}
+#news {
+    position: relative;
+    padding-bottom: 15px;
+}
+#images {
+    position: relative;
+}
+#page-news > div .content-news {
+    padding: 15px;
+}
+#page-news > div {
+    margin: 10px;
+    width: 100%;
+}
+
+.card-header {
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+}
+.settings-weather {
+    position: absolute;
+    right: 14px;
+    top: -20px;
+    color: #B7B4B4;
+}
+.history .list-block ul:after{
+    height:0;
+}
+.history .list-block ul:before{
+    height:0;
+}
+.charAt-title{
+    top: 0;
+    font-size: 3em;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    color: white;
+    right: 0;
+}
+
+
+.add-link{
+    font-size: 6.8em;
+}
+.charAt-title {
+    font-size: 4.6em !important;
+}
+
+@media screen and (max-width: 768px) { /* разрешение планшета */
+    .add-link{
+        font-size: 6.9em !important;
+    }
+    .charAt-title {
+        font-size: 4.6em !important;
+    }
+}
+@media screen and (max-width: 425px) { /* разрешение планшета */
+    .add-link {
+        font-size: 6.2em !important;
+    }
+    .charAt-title {
+        font-size: 4.2em !important;
+    }
+}
+@media screen and (max-width: 375px) { /* разрешение планшета */
+    .charAt-title {
+        font-size: 3.5em !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .charAt-title {
+        font-size: 3em !important;
+    }
+}
+
+/* Laptop/Tablet (1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+    .add-link {
+        font-size: 7.1em !important;
+    }
+}
+
+/* Tablet Portrait (768px) */
+@media only screen and (min-width: 321px) and (max-width: 1024px) {
+
+    .add-link {
+        font-size: 7.1em !important;
+    }
+}
+
+/* Phone Landscape (480px) */
+@media only screen and (min-width: 321px) and (max-width: 480px){
+    .add-link {
+        font-size: 5.1em !important;
+    }
+}
+
+/* Phone Portrait (320px) */
+@media only screen and (max-width: 320px) {
+    .add-link {
+        font-size: 4.3em !important;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenmain"
+    android:background="@drawable/vv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:id="@+id/sv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFEFE"
+        ads:layout_constraintTop_toBottomOf="@+id/sv">
+
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/sv3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_option"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="24"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/addressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFAFA"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:visibility="gone"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar100"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popbg"
+        app:layout_constraintBottom_toTopOf="@+id/sv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressBarLayout">
+
+        <LinearLayout
+            android:id="@+id/speedDialLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+
+            <include
+                android:id="@+id/hahaha"
+                layout="@layout/activity_popcuy"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivLogo3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/godabilogo" />
+
+            <TextView
+                android:id="@+id/speed_dial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingTop="6dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="6dp"
+                android:text="initialize subscription"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/lin"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="138dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@drawable/bt31"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/button77"
+                    android:layout_width="138dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@drawable/bt31"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/button3"
+                    android:layout_width="138dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bt22"
+                    android:onClick="onSubscribeButtonClicked"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/show_offerwall"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Show Offerwall"
+                android:visibility="gone" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

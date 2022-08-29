@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Title">
+        <item name="android:textColor">@color/cmn_black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Normal">
+        <item name="android:textColor">@color/cmn_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- Settings themes -->
+    <style name="Theme.SettingsTheme" parent="Theme.LightTheme">
+        <item name="android:windowBackground">@null</item>
+        <item name="toolbarSettingsBackground">@drawable/toolbar_elevate</item>
+    </style>
+
+    <style name="Theme.SettingsTheme.Dark" parent="Theme.DarkTheme">
+        <item name="android:windowBackground">@null</item>
+        <item name="toolbarSettingsBackground">@drawable/toolbar_elevate_dark</item>
+
+        <!-- Dark settings has a special primary dark -->
+        <item name="colorPrimaryDark">@color/secondary_color_settings_dark</item>
+    </style>
+
+    <style name="Theme.SettingsTheme.Black" parent="Theme.BlackTheme">
+        <item name="android:windowBackground">@null</item>
+        <item name="toolbarSettingsBackground">@drawable/toolbar_elevate_black</item>
+    </style>
+
+    <!-- Regular themes -->
+    <style name="Theme.LightTheme" parent="Theme.BaseLightTheme">
+        <item name="searchBackground">@drawable/card_bg_elevate</item>
+        <item name="listBackground">@drawable/list_bg</item>
+        <item name="progressBackgroundColor">@color/secondary_color</item>
+    </style>
+
+    <style name="Theme.DarkTheme" parent="Theme.BaseDarkTheme">
+        <item name="searchBackground">@drawable/card_bg_elevate</item>
+        <item name="listBackground">@drawable/list_bg</item>
+        <item name="progressBackgroundColor">@color/secondary_color</item>
+    </style>
+
+    <style name="Theme.BlackTheme" parent="Theme.BaseBlackTheme">
+        <item name="searchBackground">@drawable/card_bg_elevate</item>
+        <item name="listBackground">@drawable/list_bg</item>
+        <item name="progressBackgroundColor">@color/black</item>
+    </style>
+
+    <!-- Base Themes -->
+    <style name="Theme.BaseLightTheme" parent="Theme.AppCompat.Light">
+
+        <!-- Theme Colors -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="drawerBackground">@drawable/vv</item>
+        <item name="dividerColor">@color/divider_light</item>
+
+        <item name="iconColor">@color/icon_light_theme</item>
+        <item name="iconColorState">@color/state_color_icons_light</item>
+
+        <item name="autoCompleteTitleColor">@color/black</item>
+        <item name="autoCompleteUrlColor">@color/hint_text_light_theme</item>
+
+        <item name="selectedBackground">@color/selected_light</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- Overflow menu -->
+        <item name="actionOverflowButtonStyle">@style/overFlowButtonStyle</item>
+
+        <!-- Alert dialogs -->
+        <item name="alertDialogTheme">@style/AppCompatDialogStyle.Light</item>
+
+    </style>
+
+    <style name="Theme.BaseDarkTheme" parent="Theme.AppCompat">
+
+        <!-- Theme colors -->
+        <item name="colorPrimary">@color/primary_color_dark</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="drawerBackground">@color/drawer_background_dark</item>
+        <item name="dividerColor">@color/divider_dark</item>
+
+        <item name="iconColor">@color/icon_dark_theme</item>
+        <item name="iconColorState">@color/state_color_icons_dark</item>
+
+        <item name="autoCompleteTitleColor">@color/white</item>
+        <item name="autoCompleteUrlColor">@color/hint_text_dark_theme</item>
+
+        <item name="selectedBackground">@color/selected_dark</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- Overflow menu -->
+        <item name="actionOverflowButtonStyle">@style/overFlowButtonStyle</item>
+
+        <!-- Alert dialogs -->
+        <item name="alertDialogTheme">@style/AppCompatDialogStyle.Dark</item>
+    </style>
+
+    <style name="Theme.BaseBlackTheme" parent="Theme.AppCompat">
+
+        <!-- Theme Colors -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="drawerBackground">@color/black</item>
+        <item name="dividerColor">@color/black</item>
+
+        <item name="iconColor">@color/icon_dark_theme</item>
+        <item name="iconColorState">@color/state_color_icons_dark</item>
+
+        <item name="autoCompleteTitleColor">@color/white</item>
+        <item name="autoCompleteUrlColor">@color/hint_text_dark_theme</item>
+
+        <item name="selectedBackground">@color/selected_dark</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- Overflow menu -->
+        <item name="actionOverflowButtonStyle">@style/overFlowButtonStyle</item>
+
+        <!-- Alert dialogs -->
+        <item name="alertDialogTheme">@style/AppCompatDialogStyle.Black</item>
+    </style>
+
+    <!-- AlertDialog Theming -->
+    <style name="AppCompatDialogStyle.Light" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/accent_color</item>
+    </style>
+
+    <style name="AppCompatDialogStyle.Dark" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/accent_color</item>
+    </style>
+
+    <style name="AppCompatDialogStyle.Black" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/accent_color</item>
+    </style>
+
+    <!-- Overflow Menu Customization -->
+    <style name="overFlowButtonStyle" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:minWidth">48dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <!-- Text Customization -->
+    <style name="boldText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="normalText">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.popme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="AppTheme.popme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="tapjoyEasyAppTheme" parent="android:style/Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="defaultStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="textViewStyle" parent="defaultStyle">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="editText" parent="defaultStyle">
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+
+
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/top_rounded_corner_view</item>
+    </style>
+
+
+
+
+
+
+</resources>

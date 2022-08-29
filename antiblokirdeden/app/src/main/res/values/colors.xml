@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#ff000000</color>
+    <color name="gray_dark">#222222</color>
+    <color name="gray_medium">#CDCDCD</color>
+    <color name="white">#DBDBDB</color>
+    <color name="gray_list_bg">#0d000000</color>
+
+    <color name="primary_color">#FDFFFFFF</color>
+    <color name="secondary_color">#75020202</color>
+    <color name="accent_color">#0073EF</color>
+    <color name="hint_bg">#60895f</color>
+
+    <color name="drawer_background">#FFFFFF</color>
+    <color name="drawer_background_dark">#424242</color>
+
+    <color name="secondary_color_settings">#9C9C9C</color>
+    <color name="secondary_color_settings_dark">#2E2E2E</color>
+
+    <color name="hint_text_light_theme">#000000</color>
+    <color name="hint_text_dark_theme">#80ffffff</color>
+
+    <color name="primary_color_dark">#424242</color>
+    <color name="colorPrimaryDark">#424242</color>
+
+
+    <color name="divider_dark">#1FFFFFFF</color>
+    <color name="divider_light">#1F000000</color>
+
+    <color name="selected_dark">#0FFFFFFF</color>
+    <color name="selected_light">#0F000000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="icon_light_theme">#38343F</color>
+    <color name="icon_dark_theme">#FFFFFFFF</color>
+    <color name="icon_light_theme_disabled">#40000000</color>
+    <color name="icon_dark_theme_disabled">#8AFFFFFF</color>
+
+    <color name="error_red">#F44336</color>
+
+    <color name="bookmark_default_blue">#2196F3</color>
+    <color name="bookmark_default_green">#4CAF50</color>
+    <color name="bookmark_default_red">#EF5350</color>
+    <color name="bookmark_default_orange">#FF9800</color>
+
+    <color name="ssl_secured">#4CAF50</color>
+    <color name="ssl_unsecured">#F44336</color>
+
+    //tapjoy
+
+    <color name="buttonColor">#00DEFD</color>
+    <color name="disabledButtonColor">#f9dc8d</color>
+    <color name="pressedButtonColor">#0065FA</color>
+    <color name="buttonTextColor">#7e5c09</color>
+    <color name="buttonBorderColor">#1FCFAC</color>
+    <color name="backgroundColor">#f1f0ec</color>
+
+    <color name="tabColor">#F701FF</color>
+    <color name="disabledTabColor">#f9dc8d</color>
+    <color name="pressedTabColor">#dca30a</color>
+    <color name="tabTextColor">#7e5c09</color>
+    <color name="tabBackgroundColor">#000000</color>
+    <color name="tabBorderColor">#000000</color>
+
+    <color name="disableSwitchColor">#C0C0C0</color>
+
+
+    <color name="primary">#130f40</color>
+    <color name="primary_dark">#130f40</color>
+    <color name="colorAccent">#130f40</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+    </array>
+
+    <color name="dot_dark_screen1">#D1395C</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+    <color name="dot_dark_screen5">#D1395C</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93C6FD</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="dot_light_screen5">#f98da5</color>
+
+    <color name="light_gray">#40F3F1F1</color>
+    <color name="red">#FF0000</color>
+    <color name="backg">#001437</color>
+    <color name="backstatus">#263c89</color>
+
+    <!--Light Mode Color-->
+    <color name="colorAccent_Light">#E62E2F</color>
+    <color name="colorPrimary_Light">#FDFDFE</color>
+    <color name="background_Light">#FDFDFE</color>
+    <color name="Background_Light_S">#ECECEC</color>
+    <color name="Titele_A_Light">#161616</color>
+    <color name="Titele_AA_Light">#6D6D6D</color>
+    <color name="Boder_Light">#1A0C1318</color>
+
+    <!-- Items Light -->
+    <color name="md_light_background">@color/md_grey_50</color>
+    <!-- 12% -->
+    <color name="md_light_dividers">#1F000000</color>
+    <!-- 38% -->
+    <color name="md_light_disabled">#61000000</color>
+    <!-- 54% -->
+    <color name="md_light_secondary">#8A000000</color>
+    <color name="md_light_primary_icon">#8A000000</color>
+    <!-- 87% -->
+    <color name="md_light_primary_text">#DE000000</color>
+    <!-- other specifications -->
+    <color name="md_light_statusbar">@color/md_grey_300</color>
+    <color name="md_light_appbar">@color/md_grey_100</color>
+    <!-- Grey -->
+    <color name="md_grey_50">#FAFAFA</color>
+    <color name="md_grey_100">#F5F5F5</color>
+    <color name="md_grey_200">#EEEEEE</color>
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_grey_400">#BDBDBD</color>
+    <color name="md_grey_500">#9E9E9E</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_grey_700">#616161</color>
+    <color name="md_grey_800">#424242</color>
+    <color name="md_grey_850">#303030</color>
+    <color name="md_grey_900">#212121</color>
+    <color name="light_status">#f0f5ff</color>
+    <color name="grey">#E1BDBDBD</color>
+    <color name="light_blustatus">#3082FD</color>
+
+
+
+
+
+    <color name="rightNav">#032e63</color>
+    <!-- Common color -->
+    <color name="cmn_black">#000</color>
+    <color name="cmn_white">#ffffff</color>
+    <color name="cmn_transparent">#00000000</color>
+    <color name="cmn_white_gray">#f5f5f5</color>
+    <color name="cmn_white_transparent">#80ffffff</color>
+    <color name="cmn_gray">#757575</color>
+    <color name="cmn_gray_bold">#6b6666</color>
+    <color name="cmn_gray_hint">#b3b3b3</color>
+    <color name="cmn_gray_light">#EFEFEF</color>
+    <color name="cmn_gray_bg">#f7f7f7</color>
+    <color name="cmn_gray_ranking_button">#e7e7e7</color>
+    <color name="color_txt_detail">#4c4c4c</color>
+    <color name="back_ground_app">#5100ca</color>
+
+    <color name="cmn_blue">#1287ff</color>
+    <color name="cmn_green">#00b277</color>
+    <color name="cmn_red">#c62828</color>
+    <color name="cmn_yellow">#e6af21</color>
+    <color name="cmn_tab_indicator">#FDF3D0</color>>
+    <color name="cmn_text_dark">#807f7f</color>
+    <color name="cmn_text_black">#4a4b4c</color>
+    <color name="cmn_text_hint_white">#D0EDEA</color>
+    <color name="cmn_text_red">#c62827</color>
+    <color name="cmn_text_green">#6ec408</color>
+    <color name="cmn_grey_border">#a0a0a0</color>
+    <color name="cmn_blue_button">#1d68bf</color>
+    <color name="cmn_grey_button">#bcbcbc</color>
+    <color name="cmn_grey_button2">#e6e6e6</color>
+    <color name="cmn_red_text_view">#c22629</color>
+    <color name="cmn_blue_text_view">#1665c1</color>
+    <color name="cmn_background">#f1f2f2</color>
+    <color name="cmn_background_divider">#DDD</color>
+    <color name="text_disable">#CADBFB</color>
+
+</resources>

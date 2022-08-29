@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color_dark"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".VpnMain2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/Theme.DarkTheme"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+
+
+            <ImageView
+                android:id="@+id/share_app_link"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_toLeftOf="@+id/go_pro"
+                android:visibility="visible"
+
+                />
+
+            <ImageView
+                android:id="@+id/go_pro"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="Ultimate VPN"
+            android:textColor="#FDFDFD"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:cardBackgroundColor="#673AB7"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="7dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="-5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Upload"
+                        android:textColor="#3D3D3D" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/uploading_speed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="#3D3D3D"
+                            android:textSize="18dp" />
+                        <!--                        <TextView-->
+                        <!--                            android:visibility="gone"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_centerHorizontal="true"-->
+                        <!--                            android:text="Kb/S"-->
+                        <!--                            android:textSize="10dp"-->
+                        <!--                            android:textColor="#6B6A6A"-->
+                        <!--                            android:layout_gravity="center_vertical"-->
+                        <!--                            />-->
+                    </LinearLayout>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/uploading_graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        app:lottie_autoPlay="false"
+                        app:lottie_loop="true"
+                        app:lottie_speed="0.65" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="7dp"
+                app:cardUseCompatPadding="true"
+                tools:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="-5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Download"
+                        android:textColor="#3D3D3D" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/downloading_speed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="#3D3D3D"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/downloading_graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        app:lottie_autoPlay="false"
+                        app:lottie_loop="true"
+                        app:lottie_speed="1" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!--middle bar-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/cardview_dark_background">
+
+            <RelativeLayout
+                android:id="@+id/vpn_select_country"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:id="@+id/vpn_country_image"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/card_bg" />
+
+                <TextView
+                    android:id="@+id/vpn_country_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/vpn_country_image"
+                    android:text="Select Country"
+                    android:textColor="#FDFDFD"
+                    android:textSize="18sp" />
+                <!--            vpn_country_name-->
+                <ImageView
+                    android:id="@+id/vpn_select_country1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                   />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:visibility="invisible"
+                        app:cardBackgroundColor="#B6DCF7"
+                        app:cardCornerRadius="8dp">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/vpn_speed_test"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+
+                            app:lottie_speed="1" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/jero"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                        <ImageView
+                            android:id="@+id/connect_btn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/power_green"
+                            tools:ignore="AndroidSrcXmlDetector"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/vpn_connecting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/ngukuk"
+                        app:lottie_speed="1" />
+
+                    <LinearLayout
+                        android:id="@+id/connection_time_block"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/vpn_connection_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:textColor="#FDFDFD"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/vpn_connection_time_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Connection Time"
+                            android:textColor="#818080"
+                            android:textSize="12dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="-120dp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="-100dp"
+                    android:gravity="bottom">
+
+
+
+                    <View
+                        android:id="@+id/center_horizontal_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true" />
+                    <!--    app:lottie_fileName="vpn_world_animation.json"-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/center_horizontal_view"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/selected_server"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Country Name"
+                                android:textColor="#FDFDFD"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/connection_state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Connection State"
+                                android:textColor="#FDFDFD" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                           />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/regions_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+
+        <View
+            android:id="@+id/text_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/select_country_text"
+            android:background="#FDFDFD"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/regions_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_line"
+            android:minHeight="300dp"
+            android:scrollbars="vertical"
+            android:visibility="visible"
+            tools:listitem="@layout/region_list_item"
+            tools:visibility="visible" />
+
+
+
+    </LinearLayout>
+
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/main_toolbar1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="?attr/colorPrimary"-->
+<!--        android:theme="@style/ToolbarTheme"-->
+<!--        android:visibility="gone" />-->
+
+<!--    <LinearLayout-->
+<!--        style="@style/ButtonLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:visibility="gone">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/login_btn"-->
+<!--            style="@style/DefaultBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minWidth="150dp"-->
+<!--            android:text="@string/log_in" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/login_state"-->
+<!--            style="@style/StateText"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="@string/logged_out" />-->
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/login_progress"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:visibility="gone"-->
+<!--            tools:visibility="visible" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        style="@style/ButtonLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/connect_btn1"-->
+<!--            style="@style/DefaultBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minWidth="150dp"-->
+<!--            android:text="@string/connect" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/connection_state1"-->
+<!--            style="@style/StateText"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="@string/disconnected" />-->
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/connection_progress"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:visibility="gone"-->
+<!--            tools:visibility="visible" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        style="@style/ButtonLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/optimal_server_btn"-->
+<!--            style="@style/DefaultBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="40dp"-->
+<!--            android:paddingRight="40dp"-->
+<!--            android:text="@string/optimal_server" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/selected_server1"-->
+<!--            style="@style/StateText"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="@string/unknown" />-->
+
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    android:background="@drawable/vv"
+        tools:context=".Redeem">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="24sp" />
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/editTextFirstName"
+            style="@style/editText"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Hp"
+        android:textSize="24sp" />
+
+    <EditText
+            android:id="@+id/editTextLastName"
+            style="@style/editText"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        style="@style/editText"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/defaultStyle"
+        android:text="KIRIM" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="proses redeem biasanya dilakukan pada 1-3 hari sesuai antrean, jika ada kendala jangan ragu hubungi team support kami hixproindonesia@gmail.com" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,63 @@
+<!-- Copyright 2014 ACR Development -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".browser.activity.BrowserActivity2">
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:id="@+id/ui_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <include layout="@layout/browser_content"/>
+
+                <include layout="@layout/search_interface"/>
+                <include layout="@layout/toolbar"/>
+
+                <TextView
+                    android:id="@+id/counttime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/left_drawer"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="?attr/drawerBackground"
+                android:fitsSystemWindows="true"
+                android:weightSum="1" />
+
+            <FrameLayout
+                android:id="@+id/right_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="end"
+                android:background="@color/white"
+                android:fitsSystemWindows="true"
+                android:weightSum="1" />
+
+
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

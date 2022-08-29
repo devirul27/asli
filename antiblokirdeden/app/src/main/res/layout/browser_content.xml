@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/content_frame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/primary_color"
+    android:clipChildren="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/newurll"
+            layout="@layout/newurl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="gone">
+
+        </include>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/newurl2"
+            layout="@layout/newurl2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="gone">
+
+        </include>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/newurl3"
+            layout="@layout/newurl3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="gone">
+
+        </include>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/play"
+            android:contentDescription="Mode Tanpa Iklan"
+            android:visibility="gone" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/fab2"
+            android:layout_width="@dimen/margin_100dp"
+            android:layout_height="@dimen/margin_100dp"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="50dp"
+            app:lottie_rawRes="@raw/hhhh"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/fab" />
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

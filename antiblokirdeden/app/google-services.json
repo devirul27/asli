@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "2088648294",
+    "firebase_url": "https://blekok-5a6d5-default-rtdb.firebaseio.com",
+    "project_id": "blekok-5a6d5",
+    "storage_bucket": "blekok-5a6d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2088648294:android:154609fce548eeb35077a7",
+        "android_client_info": {
+          "package_name": "com.blekokmontok.browser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2088648294-7j1nssnb5mjr9bas8p1tt2mg7h358kk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNQYSDIM_3YNVeNmIcTlkzUbcAeEi54IY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2088648294-7j1nssnb5mjr9bas8p1tt2mg7h358kk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp">
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your subscription period"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="162dp"
+            android:layout_height="228dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:text="Hilangkan Iklan/ remove ads"
+                    android:textColor="@color/cmn_black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/hilangkaniklan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="170dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:gravity="bottom" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:text="Rp.5000/minggu"
+                    android:textColor="@color/cmn_black"
+                    android:textSize="@dimen/margin_15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/godabilogo" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="162dp"
+            android:layout_height="228dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-233dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:text="Hanya Server/server only"
+                    android:textColor="@color/cmn_black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:text="Rp.10000/minggu"
+                    android:textColor="@color/cmn_black"
+                    android:textSize="@dimen/margin_15dp"
+                    android:textStyle="bold" />
+                <RadioButton
+                    android:id="@+id/serveronlywithads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="170dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:gravity="bottom" />
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/godabilogo" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="162dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:text="Server premium + hulangkan iklan/premium server + remove ads"
+                    android:textColor="@color/cmn_black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/serverpremium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="200dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:gravity="bottom" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_180dp"
+                    android:text="Rp.30.000/bulan"
+                    android:textColor="@color/cmn_black"
+                    android:textSize="@dimen/margin_15dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/godabilogo" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/all_pur"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_backs"
+            android:text="Buy Now"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+</LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
